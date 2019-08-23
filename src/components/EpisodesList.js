@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import EpisodeCard from "./EpisodeCard";
 
-export default function EpisodesList() {
+export default function EpisodeList() {
     const [episodes, setEpisodes] = useState([]);
 
     useEffect(() => {
