@@ -7,14 +7,12 @@ import { NavLink } from "react-router-dom";
 // https://react.semantic-ui.com/modules/tab/
 
 export default function TabNav() {
-    const [activeItem, setActiveItem] = useState("home")
-
+    const [activeItem, setActiveItem] = useState("")
     const handleItemClick = (tabName) => {
-        console.log(tabName);
         setActiveItem(tabName);
     }
     return (
-        <Menu>
+        <Menu icon="labeled" horizontal>
             <Menu.Item
             as={NavLink}
             to="/"
@@ -22,6 +20,7 @@ export default function TabNav() {
             active={activeItem === 'home'}
             onClick={()=> handleItemClick("home")}
             >
+                <Icon name="home"/>
             Home Page
             </Menu.Item>
 
@@ -32,6 +31,7 @@ export default function TabNav() {
             active={activeItem === 'characters'}
             onClick={()=> handleItemClick("characters")}
             >
+                <Icon name="group"/>
             Characters
             </Menu.Item>
 
@@ -43,6 +43,7 @@ export default function TabNav() {
             onClick={()=> handleItemClick("locations")}
 
             >
+                <Icon name="map outline"/>
             Locations
             </Menu.Item>
 
@@ -52,8 +53,9 @@ export default function TabNav() {
             name='episodes'
             active={activeItem === 'episodes'}
             onClick={()=> handleItemClick("episodes")}
-            
+
             >
+                <Icon name="video camera"/>
             Episodes
             </Menu.Item>
         </Menu>
