@@ -18,8 +18,8 @@ export default function CharacterList() {
   }, []);
 
   return (
-    <CharacterList className="character-list grid-view">
+    <section className="character-list grid-view">
       {characters.map( charInfo => <CharacterCard key={charInfo.id} charInfo={charInfo}/>)}
-    </CharacterList>
+    </section>
   );
 }
