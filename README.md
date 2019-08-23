@@ -90,8 +90,8 @@ Create 3 page components to display data from 3 API endpoints:
 - `https://rickandmortyapi.com/api/location/` - [`docs`](https://rickandmortyapi.com/documentation/#get-all-locations)
 - `https://rickandmortyapi.com/api/episode/` - [`docs`](https://rickandmortyapi.com/documentation/#get-all-episodes)
 - You will need to add a EpisodeList and EpisodeCard component yourself.
-- [ ] Read the [Rick & Morty API](https://rickandmortyapi.com/documentation/) docs.
-- [ ] Create a component to show a grid of data from the API.
+- [X] Read the [Rick & Morty API](https://rickandmortyapi.com/documentation/) docs.
+- [X] Create a component to show a grid of data from the API.
   - [X] Include `useState`, `useEffect`.
   - [X] Use `Axios` (or `fetch`) to make a GET request to the 3 endpoints.
   - _Example API Endpoint: `https://rickandmortyapi.com/api/character/`_
@@ -103,6 +103,14 @@ Create 3 page components to display data from 3 API endpoints:
 > 💡**Reminder:** `git commit -am 'Card UI Loading Data Successfully'`
 
 ### Part 2
+
+
+
+
+Episodes on character card --> link to episodes that they are in???
+
+
+
 
 Add a Router to this application using [React Router](https://reacttraining.com/react-router/web/guides/quick-start).
 

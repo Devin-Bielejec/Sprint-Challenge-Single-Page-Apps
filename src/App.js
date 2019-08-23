@@ -11,7 +11,7 @@ export default function App() {
       <Header />
       {/* <TabNav /> */}
       {/* <CharacterList /> */}
-      <EpisodeList />
+      <CharacterList />
     </main>
   );
 }
