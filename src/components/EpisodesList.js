@@ -18,7 +18,7 @@ export default function EpisodesList() {
 
     return (
         <section className="character-list grid-view">
-{episodes.map( epInfo => <EpisodeCard key={epInfo.id} id={epInfo.id} name={epInfo.name} episode={epInfo.episode}/>)}
+{episodes.map( epInfo => <EpisodeCard key={epInfo.id} id={epInfo.id} name={epInfo.name} episode={epInfo.episode} airDate={epInfo["air_date"]}/>)}
         </section>
     );
 }
