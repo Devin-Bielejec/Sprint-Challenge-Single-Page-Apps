@@ -12,10 +12,10 @@ export default function TabNav() {
         setActiveItem(tabName);
     }
     return (
-        <Menu icon="labeled" horizontal>
+        <Menu icon="labeled" corner>
             <Menu.Item
             as={NavLink}
-            to="/"
+            exact to="/"
             name='home'
             active={activeItem === 'home'}
             onClick={()=> handleItemClick("home")}
