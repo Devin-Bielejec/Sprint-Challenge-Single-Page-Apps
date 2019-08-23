@@ -1,10 +1,10 @@
 import React from "react";
 
-export default function EpsisodeCard({ id, props }) {
+export default function EpisodeCard({ id, name, episode}) {
   return (
-    <div key={id}>
-      <h1>{props.epInfo.name}</h1>
-      <h1>Episode: {props.epInfo.episode}</h1>
+    <div id={id}>
+      <h1>{name}</h1>
+      <h1>Episode: {episode}</h1>
     </div>
   );
 }
